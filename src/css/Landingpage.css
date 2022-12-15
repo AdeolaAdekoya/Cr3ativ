@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: 'GeneralSans';
+    src: local("GeneralSans"),  url(../assets/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: "DM Mono" ;
+    src: url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+      
+}
+
+body {
+    font-family: "DM Mono", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
+}
+
+h1 {
+    font-family: "GeneralSans", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+button {
+    font-family: "DM Mono", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#about-section {
+    background: #5C45EE;
+    min-height: 100vh;
+    
+}
+
+header {
+
+    padding: 80px;
+    padding-top: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+   
+    padding: 20px 32px;
+    border-radius: 20px;
+}
+
+nav ul {
+    display: flex;
+    
+    gap: 32px;
+    margin-left: 72px;
+}
+
+nav ul li {
+  list-style-type: none;
+  color: #435D6B;
+  font-weight: 400;
+    font-size: 16px;
+
+
+}
+
+#login {
+    margin-left: auto;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    margin-right: 16px;
+}
+
+#signup {
+    background-color: #5C45EE;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    padding: 16px 24px;
+    border-radius: 20px;
+}
+
+.details {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 60px;
+    gap: 109px;
+    text-align: start;
+}
+
+.details h1 {
+    font-size: 62px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 86px;
+}
+
+#text-details p {
+    margin-top: 24px;
+    color: #EAEAEA;
+    font-weight: 400;
+font-size: 18px;
+line-height: 26px;
+}
+
+
+#get-started {
+    margin-top: 32px;
+    background: #F9C758;
+border-radius: 20px;
+padding: 16px 40px;
+color: #2F2F2F;
+font-size: 18px;
+border: none;
+}
+
+/* slider */
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);        
+    }
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+#slider-begins {
+    padding-top: 8%;
+    padding-bottom: 4%;
+    
+}
+
+#slider {
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+}
+
+#slider .slider-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    gap: 60px;
+    width: calc(250px * 14);
+}
+
+#slider .slide {
+    height: 100px;
+    width: 250px;
+}
+
+
+/* section2 */
+
+#backgound-two {
+   background-image: url(../assets/Desktop\ -\ 6.svg);
+    min-height: 100vh;
+    padding-bottom: 87px;
+   
+    
+}
+
+#backgound-two  h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+font-size: 48px;
+margin: 0 337px;
+padding-top: 104px ;
+}
+
+.boxes {
+    display: flex;
+    margin: 0 80px;
+    margin-top: 68px;
+    gap: 30px;
+}
+
+.centered-image {
+margin: 75px 0;
+}
+
+#yellow-box {
+    position: relative;
+    width: 625px;
+height: 635px;
+background: #F9C758;
+border-radius: 20px;
+}
+
+#orange-box {
+    width: 625px;
+    height: 635px;
+    background: #FFCC84;;
+    border-radius: 20px;   
+}
+
+#first-tag{
+    content: " ";
+  position: absolute;
+  /* height: 100%;
+  width: 1px; */
+  top: 69px;
+  left: 330px;
+}
+
+#first-tag img {
+    width: 210px;
+}
+
+#second-tag {
+    content: " ";
+  position: absolute; 
+  top: 383px;
+  left: 61px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* how-it-works */
+
+#how-it-works {
+
+    min-height: 100vh;
+    background: #31BD64;
+
+}
+
+#how-it-works h1 {
+
+font-weight: 700;
+font-size: 48px;
+line-height: 65px;
+color: #FFFFFF;
+text-align: center;
+padding-top: 104px;
+}
+
+#how-it-works p {
+    font-weight: 400;
+font-size: 24px;
+line-height: 31px;
+color:  #EAEAEA;
+padding-top: 34px;
+}
+
+
+
+
