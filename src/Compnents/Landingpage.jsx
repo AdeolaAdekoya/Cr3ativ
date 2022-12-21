@@ -20,10 +20,20 @@ import mockup1 from "../assets/cokeMockup.svg";
 import mockup2 from "../assets/donaldsMockup.svg";
 import tag1 from "../assets/tag1.svg";
 import tag2 from "../assets/purpleframe.svg";
-
+import line from "../assets/line.svg";
+import Lottie from "lottie-react";
+import animationData from "../assets/static/like.json";
 import "../css/Landingpage.css";
 
+// img
+import img1 from "../assets/img1.png";
+import img2 from "../assets/img2.png";
+import img3 from "../assets/img3.png";
+
+
 const Landingpage = () => {
+
+
   return (
     <div id="about-section">
       <header>
@@ -83,13 +93,13 @@ const Landingpage = () => {
                 <img src={toyota} alt="" height={100} width={100} />
               </div>
               <div className="slide">
-                <img src={HP} alt="" height={100} width={100} />
+                <img src={HP} alt="" height={70} width={70} />
               </div>
               <div className="slide">
                 <img src={visa} alt="" height={100} width={100} />
               </div>
               <div className="slide">
-                <img src={google} alt="" height={100} width={100} />
+                <img src={google} alt="" height={80} width={80} />
               </div>
               <div className="slide">
                 <img src={teen} alt="" height={100} width={100} />
@@ -116,16 +126,21 @@ const Landingpage = () => {
         <div className="boxes">
           <div id="yellow-box">
             <div id="first-tag">
-                <img src={tag1} alt="" />
+              <img src={tag1} alt="" />
             </div>
             <div className="centered-image">
               <img src={mockup1} alt="" />
             </div>
             <div id="second-tag">
-            <img src={tag2} alt="" />
+              <img src={tag2} alt="" />
             </div>
           </div>
+          {/* orange box */}
           <div id="orange-box">
+            <div id="lottie-data" style={{ width: 120, height: 120 }}>
+              {" "}
+              <Lottie loop={true} animationData={animationData}   />
+            </div>
             <div className="centered-image">
               <img src={mockup2} alt="" />
             </div>
@@ -134,15 +149,54 @@ const Landingpage = () => {
       </section>
 
       <section id="how-it-works">
+        <div id="header-decoration">
         <h1>How it Works</h1>
+        <div id="line-one">
+        <img src={line} alt="" />
+        </div>
+        </div>
+        <p>Find Content Creators with 3 easy steps</p>
 
-        {/* attendion needed */}
+        {/* image sections begins */}
 
-        <div>
+        <div id="image-sections">
+          
+          <div className="image-section-img">
+            <div className="image-content"><img src={img1} alt="" /></div>
+            <div className="text-content">
+              <h2>Connect with Top Talent</h2>
+              <button className="cta2">Join Our Network</button>
+            </div>
+          </div>
+
+          {/* end 1 */}
+
+          <div className="image-section-img">
+          <div className="image-content"><img src={img2} alt="" />
+          <div className="text-content">
+              <h2>Bid On Their Services</h2>
+              <button className="cta2"><a href=""> Join Our Network</a></button>
+            </div>
+          </div>
+          </div>
+
+           {/* end 1 */}
+
+           <div className="image-section-img">
+           <div className="image-content"><img src={img3} alt="" /></div>
+           
+            <div className="text-content">
+              <h2>Elevate Your Digital Strategy</h2>
+              <button className="cta2">Boost Your Presence</button>
+            </div>
+          </div>
+
+
+
+
+
 
         </div>
-
-        <p>Find Content Creators with 3 easy steps</p>
       </section>
     </div>
   );
