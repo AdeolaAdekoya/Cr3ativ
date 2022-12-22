@@ -30,10 +30,7 @@ import img1 from "../assets/img1.png";
 import img2 from "../assets/img2.png";
 import img3 from "../assets/img3.png";
 
-
 const Landingpage = () => {
-
-
   return (
     <div id="about-section">
       <header>
@@ -139,7 +136,7 @@ const Landingpage = () => {
           <div id="orange-box">
             <div id="lottie-data" style={{ width: 120, height: 120 }}>
               {" "}
-              <Lottie loop={true} animationData={animationData}   />
+              <Lottie loop={true} animationData={animationData} />
             </div>
             <div className="centered-image">
               <img src={mockup2} alt="" />
@@ -150,53 +147,55 @@ const Landingpage = () => {
 
       <section id="how-it-works">
         <div id="header-decoration">
-        <h1>How it Works</h1>
-        <div id="line-one">
-        <img src={line} alt="" />
-        </div>
+          <h1>How it Works</h1>
+          <div id="line-one">
+            <img src={line} alt="" />
+          </div>
         </div>
         <p>Find Content Creators with 3 easy steps</p>
 
         {/* image sections begins */}
 
         <div id="image-sections">
-          
-          <div className="image-section-img">
-            <div className="image-content"><img src={img1} alt="" /></div>
-            <div className="text-content">
-              <h2>Connect with Top Talent</h2>
-              <button className="cta2">Join Our Network</button>
+          {/* image */}
+          <div className="container-image">
+          <div className="gallery">
+              <div className="image-holder">
+                <img src={img1} alt="" />
+              </div>
+              <div className="caption">
+                <h2>Connect with Top Talent</h2>
+                <button className="cta2"><a href=""> Join Our Network</a></button>
+              </div>
+            </div>
+            <div className="gallery">
+              <div className="image-holder">
+                <img src={img2} alt="" />
+              </div>
+              <div className="caption">
+                <h2>Bid On Their Services</h2>
+                <button className="cta2"><a href="">Join Our Network</a></button>
+              </div>
+            </div>
+            <div className="gallery">
+              <div className="image-holder">
+                <img src={img3} alt="" />
+              </div>
+              <div className="caption">
+                <h2>Elevate Your Digital Strategy</h2>
+                <button className="cta2"><a href="">Boost Your Presence</a></button>
+              </div>
             </div>
           </div>
-
-          {/* end 1 */}
-
-          <div className="image-section-img">
-          <div className="image-content"><img src={img2} alt="" />
-          <div className="text-content">
-              <h2>Bid On Their Services</h2>
-              <button className="cta2"><a href=""> Join Our Network</a></button>
-            </div>
-          </div>
-          </div>
-
-           {/* end 1 */}
-
-           <div className="image-section-img">
-           <div className="image-content"><img src={img3} alt="" /></div>
-           
-            <div className="text-content">
-              <h2>Elevate Your Digital Strategy</h2>
-              <button className="cta2">Boost Your Presence</button>
-            </div>
-          </div>
-
-
-
-
-
-
         </div>
+      </section>
+
+      {/* creators section */}
+
+      <section id="creative-creators">
+        <h1>The Cr3ativ Creators</h1>
+        <p>Diverse range of creators from across the globe</p>
+
       </section>
     </div>
   );
