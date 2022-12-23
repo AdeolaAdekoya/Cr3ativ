@@ -214,7 +214,7 @@ nav ul li {
     }
 
     100% {
-        transform: translateX(calc(-200px * 3));
+        transform: translateX(calc(-250px * 3));
     }
 }
 
@@ -252,7 +252,7 @@ nav ul li {
     }
 
     100% {
-        transform: translateX(calc(-200px * 3));
+        transform: translateX(calc(-250px * 3));
     }
 }
 
@@ -291,9 +291,6 @@ nav ul li {
     background-image: url(../assets/Desktop\ -\ 6.svg);
     min-height: 100vh;
     padding-bottom: 87px;
- 
-
-
 }
 
 #backgound-two h1 {
@@ -481,7 +478,7 @@ display: block;
 
 #creative-creators {
     background: #F9C758;
-    min-height: 100vh;
+    min-height: 210vh;
     padding: 140px 0;
     
 }
@@ -524,10 +521,11 @@ padding-top: 16px;
 }
 
 
-/* font-style: normal;
-font-weight: 700;
-font-size: 48px; */
-
+#cta-footer {
+    background-image: url(../assets/background2.svg);
+    min-height: 80vh;
+    padding-bottom: 87px;
+}
 
 
 /* tab */
