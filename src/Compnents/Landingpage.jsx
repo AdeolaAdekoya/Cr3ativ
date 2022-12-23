@@ -22,6 +22,9 @@ import tag1 from "../assets/tag1.svg";
 import tag2 from "../assets/purpleframe.svg";
 import line from "../assets/line.svg";
 import swiggly from "../assets/swiggly.svg";
+import star1 from "../assets/46.svg";
+import star2 from "../assets/55.svg";
+import logowhite from "../assets/logowhite.svg";
 import Lottie from "lottie-react";
 import animationData from "../assets/static/like.json";
 import "../css/Landingpage.css";
@@ -303,12 +306,50 @@ const Landingpage = () => {
             </div>
           </div>
         </div>
-      </section >
+      </section>
       {/* second to the last */}
 
       <section id="cta-footer">
-
+        <div id="wrapperone">
+          <div className="mainwrapper">
+            <div className="maincontainer">
+              <div className="maincontent">
+                <div className="starone">
+                  <img src={star1} alt="" />
+                </div>
+                <div className="startwo">
+                  <img src={star2} alt="" />
+                </div>
+                <h2>Elevate your social media strategy</h2>
+                <p>Join now and transform your brand</p>
+                <button>Get Started</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+
+      <footer>
+        <div id="fcontent">
+          <div id="logo">
+            <img src={logowhite} alt="" />
+          </div>
+
+          <div>
+            <ul>
+              <li>Product</li>
+              <li>Partners</li>
+              <li>Learn</li>
+              <li>Privacy</li>
+              <li>Terms</li>
+              <li>Contact</li>
+             
+             
+            </ul>
+          </div>
+            
+        </div>
+      </footer>
     </div>
   );
 };
