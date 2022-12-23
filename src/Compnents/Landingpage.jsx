@@ -21,6 +21,7 @@ import mockup2 from "../assets/donaldsMockup.svg";
 import tag1 from "../assets/tag1.svg";
 import tag2 from "../assets/purpleframe.svg";
 import line from "../assets/line.svg";
+import swiggly from "../assets/swiggly.svg";
 import Lottie from "lottie-react";
 import animationData from "../assets/static/like.json";
 import "../css/Landingpage.css";
@@ -29,6 +30,32 @@ import "../css/Landingpage.css";
 import img1 from "../assets/img1.png";
 import img2 from "../assets/img2.png";
 import img3 from "../assets/img3.png";
+
+// moving cards
+// row 1
+
+import row11 from "../assets/row11.svg";
+import row12 from "../assets/row12.svg";
+import row13 from "../assets/row13.svg";
+import row14 from "../assets/row14.svg";
+import row15 from "../assets/row15.svg";
+import row16 from "../assets/row16.svg";
+
+// row 2
+import row21 from "../assets/row21.svg";
+import row22 from "../assets/row22.svg";
+import row23 from "../assets/row23.svg";
+import row24 from "../assets/row24.svg";
+import row25 from "../assets/row25.svg";
+import row26 from "../assets/row26.svg";
+
+// row 3
+import row31 from "../assets/row31.svg";
+import row32 from "../assets/row32.svg";
+import row33 from "../assets/row33.svg";
+import row34 from "../assets/row34.svg";
+import row35 from "../assets/row35.svg";
+import row36 from "../assets/row36.svg";
 
 const Landingpage = () => {
   return (
@@ -96,7 +123,7 @@ const Landingpage = () => {
                 <img src={visa} alt="" height={100} width={100} />
               </div>
               <div className="slide">
-                <img src={google} alt="" height={80} width={80} />
+                <img src={google} alt="" height={70} width={70} />
               </div>
               <div className="slide">
                 <img src={teen} alt="" height={100} width={100} />
@@ -159,13 +186,15 @@ const Landingpage = () => {
         <div id="image-sections">
           {/* image */}
           <div className="container-image">
-          <div className="gallery">
+            <div className="gallery">
               <div className="image-holder">
                 <img src={img1} alt="" />
               </div>
               <div className="caption">
                 <h2>Connect with Top Talent</h2>
-                <button className="cta2"><a href=""> Join Our Network</a></button>
+                <button className="cta2">
+                  <a href="#"> Join Our Network</a>
+                </button>
               </div>
             </div>
             <div className="gallery">
@@ -174,7 +203,9 @@ const Landingpage = () => {
               </div>
               <div className="caption">
                 <h2>Bid On Their Services</h2>
-                <button className="cta2"><a href="">Join Our Network</a></button>
+                <button className="cta2">
+                  <a href="#">Join Our Network</a>
+                </button>
               </div>
             </div>
             <div className="gallery">
@@ -183,7 +214,9 @@ const Landingpage = () => {
               </div>
               <div className="caption">
                 <h2>Elevate Your Digital Strategy</h2>
-                <button className="cta2"><a href="">Boost Your Presence</a></button>
+                <button className="cta2">
+                  <a href="#">Boost Your Presence</a>
+                </button>
               </div>
             </div>
           </div>
@@ -193,9 +226,83 @@ const Landingpage = () => {
       {/* creators section */}
 
       <section id="creative-creators">
-        <h1>The Cr3ativ Creators</h1>
+        <div id="font-details">
+          <h1>The Cr3ativ Creators</h1>
+          <div id="swigglydetail">
+            <img src={swiggly} alt="" />
+          </div>
+        </div>
+
         <p>Diverse range of creators from across the globe</p>
 
+        <div id="slider-beginss">
+          <div id="sliders">
+            <div className="slider-tracks">
+              <div className="slides">
+                <img src={row11} alt="" height={100} width={474} />
+              </div>
+              <div className="slides">
+                <img src={row12} alt="" height={100} width={474} />
+              </div>
+              <div className="slides">
+                <img src={row13} alt="" height={100} width={474} />
+              </div>
+              <div className="slides">
+                <img src={row14} alt="" height={100} width={474} />
+              </div>
+              <div className="slides">
+                <img src={row15} alt="" height={100} width={474} />
+              </div>
+              <div className="slides">
+                <img src={row16} alt="" height={100} width={474} />
+              </div>
+            </div>
+          </div>
+          <div id="row-two-sliders">
+            <div className="row-two-slider-tracks">
+              <div className="row-two-slides">
+                <img src={row21} alt="" height={150} width={474} />
+              </div>
+              <div className="row-two-slides">
+                <img src={row22} alt="" height={150} width={474} />
+              </div>
+              <div className="row-two-slides">
+                <img src={row23} alt="" height={150} width={474} />
+              </div>
+              <div className="row-two-slides">
+                <img src={row24} alt="" height={150} width={474} />
+              </div>
+              <div className="row-two-slides">
+                <img src={row25} alt="" height={150} width={474} />
+              </div>
+              <div className="row-two-slides">
+                <img src={row26} alt="" height={150} width={474} />
+              </div>
+            </div>
+          </div>
+          <div id="row-three-sliders">
+            <div className="row-three-slider-tracks">
+              <div className="row-three-slides">
+                <img src={row31} alt="" height={150} width={474} />
+              </div>
+              <div className="row-three-slides">
+                <img src={row32} alt="" height={150} width={474} />
+              </div>
+              <div className="row-three-slides">
+                <img src={row33} alt="" height={150} width={474} />
+              </div>
+              <div className="row-three-slides">
+                <img src={row34} alt="" height={150} width={474} />
+              </div>
+              <div className="row-three-slides">
+                <img src={row35} alt="" height={150} width={474} />
+              </div>
+              <div className="row-three-slides">
+                <img src={row36} alt="" height={150} width={474} />
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );
