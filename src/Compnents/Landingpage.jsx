@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/Frame 1.svg";
+
 import landingimage from "../assets/Frame27.svg";
 import walmart from "../assets/Walmart_logo.svg";
 import coke from "../assets/Coca-Cola_logo 1.svg";
@@ -24,7 +24,6 @@ import line from "../assets/line.svg";
 import swiggly from "../assets/swiggly.svg";
 import star1 from "../assets/46.svg";
 import star2 from "../assets/55.svg";
-import logowhite from "../assets/logowhite.svg";
 import Lottie from "lottie-react";
 import animationData from "../assets/static/like.json";
 import "../css/Landingpage.css";
@@ -60,25 +59,14 @@ import row34 from "../assets/row34.svg";
 import row35 from "../assets/row35.svg";
 import row36 from "../assets/row36.svg";
 
+// slider
+
+import slider from "./Slider";
+import Navbar from "./Navbar";
 const Landingpage = () => {
   return (
     <div id="about-section">
-      <header>
-        <nav>
-          <div>
-            <img src={logo} alt="Cr3ativ logo" />
-          </div>
-
-          <ul>
-            <li>Product</li>
-            <li>Partners</li>
-            <li>Learn</li>
-          </ul>
-          <button id="login">Log in</button>
-          <button id="signup">Sign up for free</button>
-        </nav>
-      </header>
-
+        <Navbar/>
       <section>
         <div className="details">
           <div id="text-details">
@@ -306,6 +294,12 @@ const Landingpage = () => {
             </div>
           </div>
         </div>
+
+
+   <slider/>
+    
+
+
       </section>
       {/* second to the last */}
 
@@ -329,27 +323,6 @@ const Landingpage = () => {
         </div>
       </section>
 
-      <footer>
-        <div id="fcontent">
-          <div id="logo">
-            <img src={logowhite} alt="" />
-          </div>
-
-          <div>
-            <ul>
-              <li>Product</li>
-              <li>Partners</li>
-              <li>Learn</li>
-              <li>Privacy</li>
-              <li>Terms</li>
-              <li>Contact</li>
-             
-             
-            </ul>
-          </div>
-            
-        </div>
-      </footer>
     </div>
   );
 };

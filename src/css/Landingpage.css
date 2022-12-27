@@ -46,8 +46,11 @@ button {
 }
 
 header {
-  padding: 80px;
   padding-top: 40px;
+  padding-bottom: 40px;
+
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 nav {
@@ -60,6 +63,10 @@ nav {
   border-radius: 20px;
 }
 
+nav img {
+  cursor: pointer;
+}
+
 nav ul {
   display: flex;
 
@@ -67,31 +74,44 @@ nav ul {
   margin-left: 72px;
 }
 
-nav ul li {
+nav ul li  {
   list-style-type: none;
+  cursor: pointer;
+}
+
+nav ul li  a {
+  text-decoration: none;
   color: #435d6b;
   font-weight: 400;
   font-size: 16px;
-  cursor: pointer;
 }
 
 #login {
   margin-left: auto;
-  font-size: 20px;
   border: none;
   background-color: transparent;
+}
+
+#login a {
+  text-decoration: none;
+  font-size: 20px;
   margin-right: 16px;
   cursor: pointer;
+  color: #000000;
 }
 
 #signup {
   background-color: #5c45ee;
-  font-size: 20px;
-  color: #fff;
   border: none;
   padding: 16px 24px;
   border-radius: 20px;
   cursor: pointer;
+}
+
+#signup  a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
 }
 
 .details {
@@ -184,6 +204,7 @@ nav ul li {
 #slider-beginss {
   padding-top: 8%;
   padding-bottom: 4%;
+  user-select: none;
 }
 
 #sliders {
@@ -574,6 +595,8 @@ nav ul li {
 footer {
     padding: 40px 80px;
     min-height: 20vh;
+    align-items: center;
+    background: #5c45ee;
     
 
 }
@@ -581,19 +604,31 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+ 
 }
 
 #fcontent ul  {
     display: flex;
     gap: 32px;
-    
+
+    cursor: pointer;
 }
 #fcontent ul li {
    list-style: none;
-   color: #ffffff;
    font-weight: 400;
 font-size: 16px;
 }
+
+#fcontent .logo {
+  cursor: pointer;
+}
+
+#fcontent ul li  a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
 
 /* tab */
 
@@ -640,3 +675,9 @@ font-size: 16px;
     margin: 0 24px;
   }
 }
+
+/* tesimonials responsivity */
+
+/* @media (max-width: 768px) {
+
+} */
