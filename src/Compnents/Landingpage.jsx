@@ -61,7 +61,6 @@ import row36 from "../assets/row36.svg";
 
 // slider
 
-import slider from "./Slider";
 import Navbar from "./Navbar";
 const Landingpage = () => {
   return (

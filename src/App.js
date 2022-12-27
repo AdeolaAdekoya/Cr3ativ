@@ -7,6 +7,7 @@ import {Routes, Route} from 'react-router-dom';
 import ErrorPage from "./Compnents/ErrorPage"
 import Footer from './Compnents/Footer';
 import Navbar from './Compnents/Navbar';
+import Slider from './Compnents/Slider';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
 <Routes>
  <Route path="*" element={ <ErrorPage/>}/>  
 <Route path="/" element={ <Landingpage/>}/>  
+<Route path="/slider" element={ <Slider/>}/>  
         </Routes>
 <Footer/>
   
