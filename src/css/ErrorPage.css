@@ -1,5 +1,99 @@
 .error-page {
-    background: #f9c758;
+  background: #f9c758;
   min-height: 100vh;
+  padding: 0 80px;
+}
 
+.error-section {
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: start;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.error-img {
+  width: 100%;
+}
+
+.img-left {
+  margin-left: auto;
+}
+
+.error-img img {
+  width: 32vw;
+}
+
+.error-section h1 {
+  font-weight: 700;
+  font-size: 48px;
+  margin-top: 10px;
+  color: #1a1a1a;
+}
+
+.error-section p {
+  color: #1a1a1a;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 12px;
+  margin-right: 30%;
+}
+
+.error-section button {
+  margin-top: 32px;
+  background: #5c45ee;
+  border-radius: 20px;
+  padding: 16px 40px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.error-section button a {
+text-decoration: none;
+  color: #fff;
+
+}
+
+
+@media (max-width: 1000px) {
+  .error-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .img-left {
+    margin-left: 0;
+  }
+
+  .error-section p {
+    text-align: center;
+    margin-right: 10%;
+  }
+}
+
+@media (max-width: 764px) {
+  .error-page {
+    background: #f9c758;
+    min-height: 100vh;
+    padding: 0 24px;
+  }
+
+  .error-section h1 {
+    font-size: 43px;
+  }
+  .error-section p {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .error-img img {
+    width: 45vw;
+  }
+
+  .error-section button {
+    font-size: 16px;
+  }
 }

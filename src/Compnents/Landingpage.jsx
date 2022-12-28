@@ -65,7 +65,7 @@ import Navbar from "./Navbar";
 const Landingpage = () => {
   return (
     <div id="about-section">
-        <Navbar/>
+      <Navbar />
       <section>
         <div className="details">
           <div id="text-details">
@@ -293,14 +293,8 @@ const Landingpage = () => {
             </div>
           </div>
         </div>
-
-
-   <slider/>
-    
-
-
+        <slider />
       </section>
-      {/* second to the last */}
 
       <section id="cta-footer">
         <div id="wrapperone">
@@ -321,7 +315,6 @@ const Landingpage = () => {
           </div>
         </div>
       </section>
-
     </div>
   );
 };

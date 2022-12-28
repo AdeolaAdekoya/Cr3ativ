@@ -1,20 +1,33 @@
-import React from 'react'
+import React from "react";
 import "../css/ErrorPage.css";
 import Navbar from "./Navbar";
+import error from "../assets/error.svg";
 
 const ErrorPage = () => {
   return (
     <div>
-        <section className='error-page'>
-        <Navbar/>
+      <section className="error-page">
+        <Navbar />
+        <div className="error-section">
+          <div className="img-left"> <div className="error-img">
+            <img src={error} alt="" />
+          </div></div>
+         
+        <div>
+        <h1>Page not found</h1>
+          <p>
+            Sorry about that! It looks like you've stumbled upon a broken link
+            or error page.
+          </p>
+          
+          <button><a href="/">Back Home</a></button>
+       
+        </div>
+        
+ </div>
+      </section>
+    </div>
+  );
+};
 
-            {/* image */}
-
-            <h1>Urgh so sad, This page does not exist</h1>
-        ErrorPage
-        </section>
-      </div>
-  )
-}
-
-export default ErrorPage
+export default ErrorPage;
