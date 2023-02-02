@@ -1,7 +1,11 @@
 .error-page {
   background: #f9c758;
   min-height: 100vh;
-  padding: 0 80px;
+ 
+}
+
+#error-bgn{
+ padding: 0 80px;
 }
 
 .error-section {

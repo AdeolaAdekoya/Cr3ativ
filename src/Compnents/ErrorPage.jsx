@@ -8,6 +8,10 @@ const ErrorPage = () => {
     <div>
       <section className="error-page">
         <Navbar />
+        <div id="error-bgn">
+
+     
+
         <div className="error-section">
           <div className="img-left"> <div className="error-img">
             <img src={error} alt="" />
@@ -24,6 +28,7 @@ const ErrorPage = () => {
        
         </div>
         
+ </div>
  </div>
       </section>
     </div>
